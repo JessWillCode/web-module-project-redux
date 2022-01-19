@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { toggleFavorites } from '../actions/favoritesActions';
 
 
 const FavoriteMovieList = (props) => {
-    const { favorites } = props;
+    const { favorites, toggleFavorites } = props;
     
     return (<div className="col-xs savedContainer">
         <h5>Favorite Movies</h5>
@@ -27,4 +28,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, {})(FavoriteMovieList);
+export default connect(mapStateToProps, { toggleFavorites })(FavoriteMovieList);
