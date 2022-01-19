@@ -2,14 +2,7 @@ import { TOGGLE_FAVORITES, ADD_FAVORITE, REMOVE_FAVORITE } from "../actions/favo
 
 
 const initialState = {
-    favorites: [  {
-        id: 1,
-        title: "Star Wars",
-        director: "George Lucas",
-        metascore: 92,
-        genre: "Scifi",
-        description: "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader."
-      }],
+    favorites: [],
     displayFavorites: false
 }
 
